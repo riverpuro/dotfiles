@@ -6,6 +6,15 @@ filetype plugin indent on
 scriptencoding utf-8
 autocmd!
 
+function! s:load_if_exist(conf)
+  let confpath = expand($HOME . '/' . a:conf)
+  if filereadable(confpath)
+    exec ':source ' . confpath
+  endif
+endfunction
+
+call s:load_if_exist(".neobundle.vimrc")
+
 " indent
 set autoindent smartindent
 set expandtab
@@ -152,13 +161,5 @@ nnoremap <Leader>su :<C-u>Utf8Set<CR>
 nnoremap <Leader>se :<C-u>EucjpSet<CR>
 nnoremap <Leader>ss :<C-u>SjisSet<CR>
 
-function! s:load_if_exist(conf)
-  let confpath = expand($HOME . '/' . a:conf)
-  if filereadable(confpath)
-    exec ':source ' . confpath
-  endif
-endfunction
-
-call s:load_if_exist(".neobundle.vimrc")
 call s:load_if_exist(".pluginconf.vimrc")
 call s:load_if_exist(".extra.vimrc")
