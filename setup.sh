@@ -15,8 +15,14 @@ _mkdir() {
 _ln() {
   local src=$1
   local dst=$2
-  echo "ln -s $src $dst"
-  ln -s "$src" "$dst"
+  if [ -L $dst ]; then
+    echo "rm exists symlink"
+    rm $dst
+    echo "ln -s $src $dst"
+    ln -s "$src" "$dst"
+  elif [ -e $dst ]; then
+    echo "$dst exists!"
+  fi
 }
 
 _cp() {
