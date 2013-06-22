@@ -42,7 +42,7 @@ done
 
 _banner "create sym links"
 
-targets=(.shell_profile .bash_profile .bashrc .screenrc .vimrc .vim)
+targets=(.shell_profile .bash_profile .bashrc .screenrc .vimrc .vim .neobundle.vimrc)
 for conf in ${targets[@]}
 do
   src="$CWD/config/$conf"

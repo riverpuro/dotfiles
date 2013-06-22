@@ -152,12 +152,13 @@ nnoremap <Leader>su :<C-u>Utf8Set<CR>
 nnoremap <Leader>se :<C-u>EucjpSet<CR>
 nnoremap <Leader>ss :<C-u>SjisSet<CR>
 
-let pluginconf = ".vimplugins"
-if filereadable(pluginconf)
-  source pluginconf
-endif
+function! s:load_if_exist(conf)
+  let confpath = expand($HOME . '/' . a:conf)
+  if filereadable(confpath)
+    exec ':source ' . confpath
+  endif
+endfunction
 
-let vimrcext = ".vimrcext"
-if filereadable(vimrcext)
-  source vimrcext
-endif
+call s:load_if_exist(".neobundle.vimrc")
+call s:load_if_exist(".pluginconf.vimrc")
+call s:load_if_exist(".extra.vimrc")
