@@ -22,6 +22,9 @@ _ln() {
     ln -s "$src" "$dst"
   elif [ -e $dst ]; then
     echo "$dst exists!"
+  else
+    echo "ln -s $src $dst"
+    ln -s "$src" "$dst"
   fi
 }
 
@@ -48,7 +51,7 @@ done
 
 _banner "create sym links"
 
-targets=(.shell_profile .bash_profile .bashrc .screenrc .vimrc .vim .neobundle.vimrc)
+targets=(.shell_profile .bash_profile .bashrc .screenrc .vimrc .vim .neobundle.vimrc .pluginconf.vimrc)
 for conf in ${targets[@]}
 do
   src="$CWD/config/$conf"
