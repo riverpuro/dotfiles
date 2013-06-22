@@ -1,0 +1,20 @@
+#!/bin/sh
+
+src=${HOME}/local/src
+prefix=${HOME}/local
+
+mkdir -p $src
+
+cd $src
+if [ -d vim ] ; then
+  cd vim
+  hg pull -u
+else
+  hg clone https://vim.googlecode.com/hg/ vim
+  cd vim
+fi
+
+make clean
+./configure --prefix=$prefix --enable-multibyte --with-features=huge --without-x --disable-gui
+make && make install
+
