@@ -9,3 +9,5 @@
     brew install mercurial
     brew install readline
     brew install openssl
+    brew install autoconf
+    brew install libyaml
