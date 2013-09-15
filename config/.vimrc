@@ -19,6 +19,10 @@ call s:load_if_exist(".neobundle.vimrc")
 set autoindent smartindent
 set expandtab
 set backspace=indent,start,eol
+set tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType make setlocal noexpandtab
 
 " appearance
 set background=dark
