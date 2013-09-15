@@ -1,0 +1,20 @@
+#!/bin/sh
+
+src=${HOME}/local/src
+prefix=${HOME}/local
+
+mkdir -p $src
+
+cd $src
+if [ -d emacs ] ; then
+  cd emacs
+  git pull
+else
+  git clone git://git.savannah.gnu.org/emacs.git emacs
+  cd emacs
+fi
+
+./autogen.sh
+make clean
+./configure --prefix=$prefix --without-x
+make && make install

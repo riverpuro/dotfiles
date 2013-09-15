@@ -62,7 +62,7 @@ done
 
 _banner "copy my commands"
 
-targets=(update-vim)
+targets=(update-vim update-emacs)
 for cmd in ${targets[@]}
 do
   src="$CWD/bin/$cmd"

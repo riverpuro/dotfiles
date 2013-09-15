@@ -10,4 +10,5 @@
     brew install readline
     brew install openssl
     brew install autoconf
+    brew install automake
     brew install libyaml
