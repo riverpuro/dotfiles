@@ -15,7 +15,7 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle "Shougo/unite.vim"
 
 NeoBundle "YankRing.vim"
-NeoBundle "eregex.vim"
+NeoBundle "othree/eregex.vim"
 
 NeoBundle "tpope/vim-surround"
 NeoBundle "tpope/vim-bundler"

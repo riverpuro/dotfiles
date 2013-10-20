@@ -2,5 +2,6 @@ config/.vim/bundle
 config/.vim/.netrwhist
 config/.vim/info
 config/.vim/skk/skk-jisyo
+config/.vim/skk/skk-jisyo.BAK
 
 *.sw*
