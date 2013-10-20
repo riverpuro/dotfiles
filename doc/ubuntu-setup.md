@@ -10,3 +10,4 @@
 
     sudo aptitude install ssh lv screen
     sudo aptitude install zsh git mercurial build-essential libncurses-dev
+    sudo dpkg-reconfigure locales
