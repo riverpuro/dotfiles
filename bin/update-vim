@@ -15,6 +15,6 @@ else
 fi
 
 make clean
+make distclean
 ./configure --prefix=$prefix --enable-multibyte --with-features=huge --without-x --disable-gui
 make && make install
-
