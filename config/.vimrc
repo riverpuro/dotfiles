@@ -66,9 +66,6 @@ function! MyTabLine()
     let l:line .= ' %{MyTabLabel(' . (i + 1) . ')} '
   endfor
   let l:line .= '%#TabLineFill#%T'
-  if tabpagenr('$') > 1
-    let l:line .= '%=%#TabLine#%999Xx'
-  endif
   return l:line
 endfunction
 set tabline=%!MyTabLine()
