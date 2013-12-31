@@ -11,6 +11,4 @@ bind X
 bind ^X
 bind x lockscreen
 
-bind  clear
-
-#shell -${SHELL}
+bind ^L clear
