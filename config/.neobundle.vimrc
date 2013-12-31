@@ -34,4 +34,6 @@ NeoBundle "vim-jp/vimdoc-ja"
 NeoBundle "thinca/vim-ref"
 NeoBundle "thinca/vim-quickrun"
 
+NeoBundle "timcharper/textile.vim"
+
 NeoBundleCheck
