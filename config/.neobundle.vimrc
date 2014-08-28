@@ -48,4 +48,6 @@ NeoBundle "thinca/vim-quickrun"
 
 NeoBundle "timcharper/textile.vim"
 
+NeoBundle 'derekwyatt/vim-scala'
+
 NeoBundleCheck
