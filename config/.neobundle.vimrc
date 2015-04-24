@@ -51,6 +51,8 @@ NeoBundle "slim-template/vim-slim"
 
 NeoBundle 'derekwyatt/vim-scala'
 
+NeoBundle 'udalov/kotlin-vim'
+
 NeoBundleCheck
 
 call neobundle#end()
