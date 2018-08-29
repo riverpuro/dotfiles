@@ -1,4 +1,4 @@
-. .shell_profile
+. $HOME/.shell_profile
 
 if [ -f "$HOME/.bashrc" ]; then
   . "$HOME/.bashrc"

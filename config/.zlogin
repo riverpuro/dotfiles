@@ -1,1 +1,1 @@
-source .shell_profile
+source $HOME/.shell_profile
