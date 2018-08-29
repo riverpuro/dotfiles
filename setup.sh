@@ -67,5 +67,5 @@ for cmd in ${targets[@]}
 do
   src="$CWD/bin/$cmd"
   dst="$HOME/bin/$cmd"
-  _cp $src $dst
+  _ln $src $dst
 done

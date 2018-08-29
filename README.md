@@ -3,7 +3,7 @@
 ## pre requirements
 
 - build tools
-- mercurial
+- git
 
 ## usage
 
