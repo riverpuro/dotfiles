@@ -1,1 +1,3 @@
-source $HOME/.shell_profile
+if [ -f "$HOME/.profile" ]; then
+  . "$HOME/.profile"
+fi
