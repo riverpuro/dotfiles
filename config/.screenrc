@@ -12,3 +12,5 @@ bind ^X
 bind x lockscreen
 
 bind ^L clear
+
+defscrollback 100000
