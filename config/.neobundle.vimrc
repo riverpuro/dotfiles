@@ -39,7 +39,7 @@ NeoBundle "tyru/skk.vim"
 
 NeoBundle "kana/vim-fakeclip"
 NeoBundle "thinca/vim-tabrecent"
-NeoBundle "h1mesuke/vim-alignta"
+NeoBundle "junegunn/vim-easy-align"
 NeoBundle "tpope/vim-repeat"
 NeoBundle "vim-jp/vimdoc-ja"
 
@@ -53,6 +53,8 @@ NeoBundle 'derekwyatt/vim-scala'
 
 NeoBundle 'udalov/kotlin-vim'
 NeoBundle 'pangloss/vim-javascript'
+
+NeoBundle 'fatih/vim-go'
 
 NeoBundleCheck
 
