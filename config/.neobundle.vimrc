@@ -56,6 +56,9 @@ NeoBundle 'pangloss/vim-javascript'
 
 NeoBundle 'fatih/vim-go'
 
+NeoBundle 'Vimjas/vim-python-pep8-indent'
+NeoBundle 'dense-analysis/ale'
+
 NeoBundleCheck
 
 call neobundle#end()
