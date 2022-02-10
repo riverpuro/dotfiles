@@ -90,3 +90,6 @@ fi
 if [[ -s "$HOME/.zsh/z/z.sh" ]] ; then
   source "$HOME/.zsh/z/z.sh"
 fi
+
+# pyenv
+eval "$(pyenv init -)"
